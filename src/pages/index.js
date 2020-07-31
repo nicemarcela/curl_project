@@ -5,10 +5,11 @@ import { graphql, StaticQuery } from "gatsby"
 import Post from '../components/Post'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle="What the Curl">
     <SEO title="Home" />
-    <h1>Home Page</h1>
-    <StaticQuery query={IndexQuery} render={data => {
+    <StaticQuery 
+    query={IndexQuery} 
+    render={data => {
       return (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -19,7 +20,7 @@ const IndexPage = () => (
             slug={node.fields.slug}
             date={node.frontmatter.date}
             body={node.excerpt}
-            tags={node.frontmatter.tags}
+            fluid={node.frontmatter.image.childImageSharp.fluid}
             />
           ))}
         </div>
@@ -39,7 +40,13 @@ query {
           title
           date(formatString:"MMM Do YYYY")
           author
-          tags
+          image {
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         fields {
           slug

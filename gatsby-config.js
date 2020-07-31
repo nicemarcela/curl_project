@@ -5,9 +5,12 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
     
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,7 +26,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,9 +39,8 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-transformer-remark`,
+    
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
