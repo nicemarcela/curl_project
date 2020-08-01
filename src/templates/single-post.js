@@ -8,9 +8,9 @@ import { DiscussionEmbed } from 'disqus-react'
 const SinglePost = ({ data, pageContext}) => {
     const post = data.markdownRemark.frontmatter
     
-    const baseUrl = 'https://gatsbytutorial.co.uk/'
+    const baseUrl = 'https://whathecurl.com'
 
-    const disqusShortname = 'https-gatsbytutorial-co-uk'
+    const disqusShortname = 'what-the-curl'
     const disqusConfig = {
         identifier: data.markdownRemark.id,
         title: post.title,
