@@ -25,18 +25,19 @@ $green: #f5ceff;
 .window-2 {
 	left: 200px;
 	top: 100px;
-  width: 600px;
+  width: 700px;
   background: $green;
   margin: 0 auto;
 }
 
 .window-content {
-	max-height: calc(100% - 20px);
+	max-height: calc(100% - 100px);
 	overflow-y: auto;
 	padding: 1rem;
 	margin: 20px 10px;
 	h1 {
-		font-size: 4rem;
+		font-size: 2.5rem;
+		margin-bottom: 22px;
 	}
 }
 
@@ -48,10 +49,10 @@ $green: #f5ceff;
 	justify-content: flex-end;
 	border-bottom: $dragbar-width solid $black;
 	width: 100%;
-	cursor: grab;
-	.is-pointer-down & {
-		cursor: grabbing;
-	}
+	// cursor: grab;
+	// .is-pointer-down & {
+	// 	cursor: grabbing;
+	// }
 	&:hover, &:focus {
 		background: darken(white, 10)
 	}
@@ -60,16 +61,18 @@ $green: #f5ceff;
 .window-title {
 	font-size: .9rem;
 	font-weight: 600;
-	
 }
 
 .window-singlepost {
-	width: 80%;
+	width: 800px;
     background: #f5ceff;
     margin: 0 auto;
-    height: 600px;
 }
 
+.singlepost-text {
+	margin: 45px;
+	font-size: 18px;
+}
 
 [class*=window-control]{
 	display: inline-block;
@@ -115,6 +118,14 @@ $green: #f5ceff;
   margin-bottom: 30px;
 }
 
+.card-text {
+	margin: 40px;
+}
+
+.card-title {
+	font-size: 23px;
+}
+
 .card-subtitle {
   margin: 0 auto;
 } 
@@ -134,4 +145,10 @@ ul.post-tags {
   display: flex;
   margin: 0 auto;
   padding: 100px;
+}
+
+.card-image-top {
+	width: 300px;
+	margin: 0 auto;
+	padding: 100px;
 }

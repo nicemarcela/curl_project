@@ -21,6 +21,7 @@ const IndexPage = () => (
             date={node.frontmatter.date}
             body={node.excerpt}
             fluid={node.frontmatter.image.childImageSharp.fluid}
+            linkURL={node.frontmatter.linkURL}
             />
           ))}
         </div>
@@ -37,6 +38,7 @@ query {
       node {
         id
         frontmatter {
+          linkURL
           title
           date(formatString:"MMM Do YYYY")
           product1 {
@@ -45,6 +47,7 @@ query {
             image {
               publicURL
             }
+            productURL
           }
           product2 {
             title
@@ -52,6 +55,7 @@ query {
             image {
               publicURL
             }
+            productURL
           }
           product3 {
             title
@@ -59,6 +63,7 @@ query {
             image {
               publicURL
             }
+            productURL
           }
           author
           image {
@@ -73,6 +78,7 @@ query {
           slug
         }
         excerpt
+        
       }
     }
   }

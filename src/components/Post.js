@@ -13,6 +13,7 @@ const Post =
     product1, 
     product2, 
     product3, 
+    linkURL
  }) => {
     return (
         <div>
@@ -20,16 +21,16 @@ const Post =
                 <div className="window draggable window-2">
                         <header className="window-header">
                         <CardSubtitle>
-                    <span className="text-info">{date}</span> by {' '}
-                    <span className="text-info">{author}</span>
-                </CardSubtitle>
+                            <span className="text-info">{date}</span> by {' '}
+                            <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
+                        </CardSubtitle>
                             <nav className="window-controls">
                             
-                            <a href='#1' id="close-button" className="window-control-close">
+                            {/* <a href='#1' id="close-button" className="window-control-close">
                                 <svg>
                                 <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
                                 </svg>
-                            </a>
+                            </a> */}
                             </nav>
                         </header>
                 <div className='dragbar-right' id="resize-right"></div>

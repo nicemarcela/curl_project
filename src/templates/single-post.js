@@ -3,6 +3,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import { CardBody, CardSubtitle, Media } from 'reactstrap'
+import Img from 'gatsby-image'
 
 const SinglePost = ({ data, pageContext}) => {
     const post = data.markdownRemark.frontmatter
@@ -20,9 +21,9 @@ const SinglePost = ({ data, pageContext}) => {
                 <header className="window-header">
                 <CardSubtitle>
                     <span className="text-info">{post.date}</span> by {' '}
-                    <span className="text-info">{post.author}</span>
+                    <a href={post.linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{post.author}</a>
                 </CardSubtitle>
-                <a href='#1' id="close-button" className="window-control-close">
+                <a href='/' id="close-button" className="window-control-close">
                     <svg>
                       <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
                     </svg>
@@ -32,9 +33,11 @@ const SinglePost = ({ data, pageContext}) => {
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
                 <div className="window-content">
-                <div dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} ></div>
+                  <h1>{post.title}</h1>
+                  <Img className="card-image-top" fluid={post.image.childImageSharp.fluid} />
+                <div className="singlepost-text" dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} ></div>
                 <Media>
-                    <Media left top href="#">
+                    <Media href={post.product1.productURL} target="_blank" rel="noopener noreferrer" left top >
                       <img style={{width: "100px"}} src={post.product1.image.publicURL} alt="Product" />
                     </Media>
                     <Media body>
@@ -45,7 +48,7 @@ const SinglePost = ({ data, pageContext}) => {
                     </Media>
                   </Media>
                   <Media className="mt-1">
-                    <Media left middle href="#">
+                    <Media href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
                       <img style={{width: "100px"}} src={post.product2.image.publicURL} alt="Product" />
                     </Media>
                     <Media body>
@@ -56,7 +59,7 @@ const SinglePost = ({ data, pageContext}) => {
                     </Media>
                   </Media>
                   <Media className="mt-1">
-                    <Media left bottom href="#">
+                    <Media href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
                       <img style={{width: "100px"}} src={post.product3.image.publicURL} alt="Product" />
                     </Media>
                     <Media body>
@@ -120,6 +123,7 @@ export const postQuery = graphql`
             id
             html
             frontmatter {
+                linkURL
                 title
                 author
                 date(formatString:"MMM Do YYYY")
@@ -129,6 +133,7 @@ export const postQuery = graphql`
                   image {
                     publicURL
                   }
+                  productURL
                 }
                 product2 {
                   title
@@ -136,12 +141,21 @@ export const postQuery = graphql`
                   image {
                     publicURL
                   }
+                  productURL
                 }
                 product3 {
                   title
                   description
                   image {
                     publicURL
+                  }
+                  productURL
+                }
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
             }
