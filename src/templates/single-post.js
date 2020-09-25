@@ -1,36 +1,78 @@
 import React from 'react'
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
-import { Card, CardBody, CardSubtitle } from 'reactstrap'
-import { DiscussionEmbed } from 'disqus-react'
+import { CardBody, CardSubtitle, Media } from 'reactstrap'
 
 const SinglePost = ({ data, pageContext}) => {
     const post = data.markdownRemark.frontmatter
     
-    const baseUrl = 'https://whathecurl.com'
+    // const baseUrl = 'https://whathecurl.com'
 
-    const disqusShortname = 'what-the-curl'
-    const disqusConfig = {
-        identifier: data.markdownRemark.id,
-        title: post.title,
-        url: baseUrl + pageContext.slug
-    }
+
 
     return (
-        <Layout pageTitle={post.title}>
+       <div>
+         {/* <Layout pageTitle={post.title}> */}
             <SEO title={post.title} />
-            <Card>
-            <CardBody>
+            <CardBody pagetitle={post.title}>
+            <div className="window draggable window-singlepost">
+                <header className="window-header">
                 <CardSubtitle>
                     <span className="text-info">{post.date}</span> by {' '}
                     <span className="text-info">{post.author}</span>
                 </CardSubtitle>
+                <a href='#1' id="close-button" className="window-control-close">
+                    <svg>
+                      <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg>
+                </a>
+                </header>
+                <div className='dragbar-right' id="resize-right"></div>
+                <div className='dragbar-left' id="resize-left"></div>
+                <div className='dragbar-bottom' id="resize-bottom"></div>
+                <div className="window-content">
+                <div dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} ></div>
+                <Media>
+                    <Media left top href="#">
+                      <img style={{width: "100px"}} src={post.product1.image.publicURL} alt="Product" />
+                    </Media>
+                    <Media body>
+                      <Media heading>
+                        {post.product1.title}
+                      </Media>
+                      {post.product1.description}
+                    </Media>
+                  </Media>
+                  <Media className="mt-1">
+                    <Media left middle href="#">
+                      <img style={{width: "100px"}} src={post.product2.image.publicURL} alt="Product" />
+                    </Media>
+                    <Media body>
+                      <Media heading>
+                      {post.product2.title}
+                      </Media>
+                      {post.product2.description}
+                    </Media>
+                  </Media>
+                  <Media className="mt-1">
+                    <Media left bottom href="#">
+                      <img style={{width: "100px"}} src={post.product3.image.publicURL} alt="Product" />
+                    </Media>
+                    <Media body>
+                      <Media heading>
+                        {post.product3.title}
+                      </Media>
+                      {post.product3.description}
+                    </Media>
+                  </Media>
+                </div>
+                </div>
             </CardBody>
-            <div dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} ></div>
-        </Card>
-
-        <h3 className="text-center">Share this post</h3>
+            {/* </Layout> */}
+            
+       
+        {/* <h3 className="text-center">Share this post</h3>
       <div className="text-center social-share-links">
         <ul>
           <li>
@@ -66,9 +108,9 @@ const SinglePost = ({ data, pageContext}) => {
             </a>
           </li>
         </ul>
+      </div> */}
       </div>
-      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-        </Layout>
+      
     )
 }
 
@@ -81,6 +123,27 @@ export const postQuery = graphql`
                 title
                 author
                 date(formatString:"MMM Do YYYY")
+                product1 {
+                  title
+                  description
+                  image {
+                    publicURL
+                  }
+                }
+                product2 {
+                  title
+                  description
+                  image {
+                    publicURL
+                  }
+                }
+                product3 {
+                  title
+                  description
+                  image {
+                    publicURL
+                  }
+                }
             }
         }
     }

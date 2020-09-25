@@ -12,6 +12,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import '../styles/index.scss'
 
+import Icon from '../images/icon.png';
+
 import { Row, Col } from 'reactstrap'
 
 const Layout = ({ children, pageTitle }) => (
@@ -27,15 +29,18 @@ const Layout = ({ children, pageTitle }) => (
     `}
     render={data => (
       <>
+      
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
           crossOrigin="anonymous"
         />
+        
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container" id="content">
-          <h1>{pageTitle}</h1>
+        <img className="icon" src={Icon} alt="" />
+        <h1 className="title">{pageTitle}</h1>
           <Row>
             <Col md="8">{children}</Col>
           </Row>

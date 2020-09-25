@@ -39,6 +39,27 @@ query {
         frontmatter {
           title
           date(formatString:"MMM Do YYYY")
+          product1 {
+            title
+            description
+            image {
+              publicURL
+            }
+          }
+          product2 {
+            title
+            description
+            image {
+              publicURL
+            }
+          }
+          product3 {
+            title
+            description
+            image {
+              publicURL
+            }
+          }
           author
           image {
             childImageSharp {
