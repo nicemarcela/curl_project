@@ -2,8 +2,9 @@ import React from 'react'
 // import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
-import { CardBody, CardSubtitle, Media } from 'reactstrap'
+import { CardBody, CardSubtitle, Media, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
+import Header from "../components/header"
 
 const SinglePost = ({ data, pageContext}) => {
     const post = data.markdownRemark.frontmatter
@@ -13,14 +14,18 @@ const SinglePost = ({ data, pageContext}) => {
 
 
     return (
-       <div>
+      <div>
+      <Header />
+       <div className="container" id="content">
          {/* <Layout pageTitle={post.title}> */}
+            
             <SEO title={post.title} />
+            
             <CardBody pagetitle={post.title}>
             <div className="window draggable window-singlepost">
                 <header className="window-header">
                 <CardSubtitle>
-                    <span className="text-info">{post.date}</span> by {' '}
+                    <span>{post.date}</span> by {' '}
                     <a href={post.linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{post.author}</a>
                 </CardSubtitle>
                 <a href='/' id="close-button" className="window-control-close">
@@ -32,48 +37,55 @@ const SinglePost = ({ data, pageContext}) => {
                 <div className='dragbar-right' id="resize-right"></div>
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
+
                 <div className="window-content">
                   <h1>{post.title}</h1>
+                  <Badge color="light" pill>{post.type}</Badge>
+                  <Badge href={post.linkURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.author}</Badge>
                   <Img className="card-image-top" fluid={post.image.childImageSharp.fluid} />
-                <div className="singlepost-text" dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} ></div>
-                <Media>
-                    <Media href={post.product1.productURL} target="_blank" rel="noopener noreferrer" left top >
-                      <img style={{width: "100px"}} src={post.product1.image.publicURL} alt="Product" />
-                    </Media>
-                    <Media body>
-                      <Media heading>
-                        {post.product1.title}
+                  <div className="singlepost-text" 
+                  dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} >
+                  </div>
+                    <Media className="mt-4">
+                      <Media href={post.product1.productURL} target="_blank" rel="noopener noreferrer" left top >
+                        <img style={{width: "100px"}} src={post.product1.image.publicURL} alt="Product" />
                       </Media>
-                      {post.product1.description}
-                    </Media>
-                  </Media>
-                  <Media className="mt-1">
-                    <Media href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
-                      <img style={{width: "100px"}} src={post.product2.image.publicURL} alt="Product" />
-                    </Media>
-                    <Media body>
-                      <Media heading>
-                      {post.product2.title}
+                      <Media body>
+                        <Media heading>
+                          {post.product1.title}
+                        </Media>
+                        {post.product1.description}
                       </Media>
-                      {post.product2.description}
                     </Media>
-                  </Media>
-                  <Media className="mt-1">
-                    <Media href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
-                      <img style={{width: "100px"}} src={post.product3.image.publicURL} alt="Product" />
-                    </Media>
-                    <Media body>
-                      <Media heading>
-                        {post.product3.title}
+
+                    <Media className="mt-4">
+                      <Media href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
+                        <img style={{width: "100px"}} src={post.product2.image.publicURL} alt="Product" />
                       </Media>
-                      {post.product3.description}
+                      <Media body>
+                        <Media heading>
+                        {post.product2.title}
+                        </Media>
+                        {post.product2.description}
+                      </Media>
                     </Media>
-                  </Media>
+
+                    <Media className="mt-4">
+                      <Media href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
+                        <img style={{width: "100px"}} src={post.product3.image.publicURL} alt="Product" />
+                      </Media>
+                      <Media body>
+                        <Media heading>
+                          {post.product3.title}
+                        </Media>
+                        {post.product3.description}
+                      </Media>
+                    </Media>
                 </div>
                 </div>
             </CardBody>
             {/* </Layout> */}
-            
+            </div>
        
         {/* <h3 className="text-center">Share this post</h3>
       <div className="text-center social-share-links">
@@ -125,7 +137,9 @@ export const postQuery = graphql`
             frontmatter {
                 linkURL
                 title
+                type
                 author
+                backgroundColor
                 date(formatString:"MMM Do YYYY")
                 product1 {
                   title

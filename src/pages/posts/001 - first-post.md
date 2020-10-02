@@ -4,6 +4,8 @@ date: "2020-07-19"
 author: 'Marcela'
 linkURL: "https://www.instagram.com/nicemarcela/"
 image: "../../images/curly-girl.png"
+type: '3C'
+backgroundColor: '#0099CC'
 
 product1: 
     title: 'Curl dream'

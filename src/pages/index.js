@@ -22,6 +22,8 @@ const IndexPage = () => (
             body={node.excerpt}
             fluid={node.frontmatter.image.childImageSharp.fluid}
             linkURL={node.frontmatter.linkURL}
+            type={node.frontmatter.type}
+            backgroundColor={node.frontmatter.backgroundColor}
             />
           ))}
         </div>
@@ -40,6 +42,8 @@ query {
         frontmatter {
           linkURL
           title
+          type
+          backgroundColor
           date(formatString:"MMM Do YYYY")
           product1 {
             title

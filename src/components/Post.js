@@ -13,7 +13,9 @@ const Post =
     product1, 
     product2, 
     product3, 
-    linkURL
+    linkURL,
+    type,
+    backgroundColor
  }) => {
     return (
         <div>
@@ -25,22 +27,17 @@ const Post =
                             <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
                         </CardSubtitle>
                             <nav className="window-controls">
-                            
-                            {/* <a href='#1' id="close-button" className="window-control-close">
-                                <svg>
-                                <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                </svg>
-                            </a> */}
                             </nav>
                         </header>
                 <div className='dragbar-right' id="resize-right"></div>
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
-                <div className="window-content">
+                <div style={{backgroundColor: {backgroundColor} }}className="window-content">
+                
                 <CardTitle>
-                <Link to={slug}>
-                    {title}
-                </Link>
+                    <Link to={slug}>
+                       <h2>{title}</h2>
+                    </Link>
                 </CardTitle>
                 
                 <Link to={slug}>
@@ -50,13 +47,19 @@ const Post =
                 
                 <CardText>
                     {body}
-                {product1}
-                {product2}
-                {product3}
-
+                    {product1}
+                    {product2}
+                    {product3}
+                    
                 </CardText>
-               
-                <Link to={slug} className="btn btn-outline-primary float-right">Read more</Link>
+                
+                <Link to={slug} className="float-right item window1">
+                <button className="double-shadow highlighted">
+                Read More
+                </button>
+                </Link>
+                
+                
                 </div>
                 </div>
             </CardBody>

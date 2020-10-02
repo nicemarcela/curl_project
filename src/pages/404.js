@@ -7,7 +7,13 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p style=
+    {{ fontFamily: "Fredoka One",
+                fontSize: "32px",
+                color: "#fffb0e",
+                textAlign: "center",
+                webkitTextStroke: "2px #020102" }}>
+    You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 )
 

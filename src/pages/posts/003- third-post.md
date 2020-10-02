@@ -4,6 +4,8 @@ date: "2020-07-29"
 author: 'Marcela'
 linkURL: "https://www.instagram.com/nicemarcela/"
 image: "../../images/post.png"
+type: '4A'
+backgroundColor: '#0099CC'
 
 product1: 
     title: 'Curl dream'

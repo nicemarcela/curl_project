@@ -1,48 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+  font-family:"Chicago";
+  src:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2989272/chikarego2-webfont.ed446049.woff2) format("woff2"),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2989272/chikarego2-webfont.bfc0d735.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .container#content {
-  margin-top: 60px;
+  display: inherit;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 body {
   background-color: $light-gray;
   font-family: $site-font;
+  cursor: url(../images/cursor.svg) 3 0,auto!important;
+  background-image: url(../images/bg.svg)!important;
+  background-color: blueviolet;
 }
+
 a {
-  color: #0056b3;
-  &:hover {
-    color: #007bff;
-    text-decoration: none;
-  }
+  color: #220036;
+  cursor: url(../images/click.svg) 3 0,auto!important;
+  text-decoration: none;
 }
 
-.geeks { 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100vh; 
-} 
-
-.geeks::before { 
-  content: ""; 
-  position: absolute; 
-  width: 100%; 
-  height: 100%; 
-  background: repeating-linear-gradient( 
-          0deg, #000 0, #000 40px,  
-          #fff 40px, #fff 80px); 
-} 
-
-.geeks::after { 
-  content: ""; 
-  position: absolute; 
-  width: 100%; 
-  height: 100%; 
-  background: repeating-linear-gradient( 
-      90deg, #000 0, #000 40px,  
-      #fff 40px, #fff 80px); 
-  mix-blend-mode: difference; 
-} 
+.popover-txt {
+  color: #220036;
+  &:hover {
+    color: #ff0095;
+    text-decoration: none;
+    font-weight: bold;
+}
+}
 
 h1 {
   font-family: "Fredoka One",cursive;
@@ -53,27 +45,70 @@ h1 {
 }
 
 .icon {
-  width: 128px;
+  width: 100px;
   position: relative;
   margin: 0 auto;
   display: block;
 }
 
-.navbar {
-  background-color: white;
-  // border-right: 1px solid rgba(0, 0, 0, 0.4);
-  // border-left: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  line-height: 1;
+.nav-bar {
+  display: inline-block;
+
+  width: 90px;
+  height: 100vh;
+  text-align: center;
+  font-family:"Chicago";
+  position: fixed;
 }
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-brand {
-  color: #0056b3;
-  &:hover {
-    color: #007bff;
-  }
-}
+
+// .navbar {
+//   background-color: white;
+//   // border-right: 1px solid rgba(0, 0, 0, 0.4);
+//   // border-left: 1px solid rgba(0, 0, 0, 0.4);
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+//   line-height: 1;
+// }
+// .navbar-light .navbar-nav .nav-link,
+// .navbar-light .navbar-brand {
+//   color: #0056b3;
+//   &:hover {
+//     color: #007bff;
+//   }
+// }
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
+.nav-link {
+  font-size: 17px;
+  cursor: url(../images/click.svg) 3 0,auto!important;
+  color: #000;
+  span {
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
+  }
+  
+  
+}
+
+.nav-link span {
+  &:hover {
+    border: 1px dotted #000;
+    background: rgb(251, 255, 0);
+    color: #000;
+    opacity: 100%;
+}
+}
+
+// .buttonFalse {
+//   background-color: rgb(220, 148, 253);
+//   border: 1px dotted rgb(255, 244, 244);
+//   color: #020102;
+// }
+
+// .buttonTrue {
+//   background-color: rgb(255, 255, 255);
+//   opacity: 70%;
+// }

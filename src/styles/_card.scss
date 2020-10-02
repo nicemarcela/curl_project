@@ -1,3 +1,20 @@
+:root {
+	--shadow-medium: #bbb;
+	--shadow-light: #fff;
+	--shadow-dark: #9c9c9c;
+	--window-white: #fefefe;
+	--window-grey: #ebebeb;
+	--border-color: #000;
+	--desktop-color: #a3a3d4;
+	--desktop-highlight: #cabcda;
+	--desktop-page-header: #e6e6fa;
+	--icon-background: #fff;
+	--button-background: #fefefe;
+	--button-shadow-dark: #282828;
+	--button-shadow-light: #f8f8f8;
+	--button-selected: #92cac3;
+  }
+
 $dragbar-width: 3px;
 $blue: #268Aff;
 $black: rgb(20,20,20);
@@ -20,13 +37,15 @@ $green: #f5ceff;
 		transform: translateY(-100px);
 		pointer-events: none;
 	}
+	background-repeat: repeat;
+    background-image: url(../images/waves.svg),linear-gradient(180deg,#5094bf 0%,#29c4a9 100%);
+    background-color: #4ea8c0;
 }
 
 .window-2 {
 	left: 200px;
-	top: 100px;
   width: 700px;
-  background: $green;
+//   background: $green;
   margin: 0 auto;
 }
 
@@ -65,7 +84,7 @@ $green: #f5ceff;
 
 .window-singlepost {
 	width: 800px;
-    background: #f5ceff;
+    // background: #f5ceff;
     margin: 0 auto;
 }
 
@@ -97,21 +116,18 @@ $green: #f5ceff;
 	top: 0;
 	width: $dragbar-width;
 	height: 100%;
-	cursor: ew-resize;
 }
 .dragbar-bottom {
 	bottom: 0;
 	left: 0;
 	height: $dragbar-width;
 	width: 100%;
-	cursor: ns-resize;
 }
 .dragbar-left {
 	bottom: 0;
 	left: 0;
 	width: $dragbar-width;
 	height: 100%;
-	cursor: ew-resize;
 }
 
 .card {
@@ -152,3 +168,80 @@ ul.post-tags {
 	margin: 0 auto;
 	padding: 100px;
 }
+
+.media-heading {
+	font-size: 1.5rem;
+}
+
+.media-body {
+	margin: 10px;
+}
+
+.highlighted {
+    text-shadow: 2px 1px 0 var(--shadow-light);
+}
+
+.double-shadow {
+  -webkit-box-shadow: 
+    0 -3px 2px -1px var(--shadow-medium) inset, // bottom
+    0 3px 2px -1px var(--shadow-light) inset, // top
+    3px 0 2px -1px var(--shadow-light) inset, // left
+    -3px 0 2px -1px var(--shadow-medium) inset, // right
+    0 -2px 2px -1px var(--shadow-medium), // top
+    0 2px 2px -1px var(--shadow-light), // bottom
+    2px 0 2px -1px var(--shadow-light), // right
+    -2px 0 2px -1px var(--shadow-medium); // left
+  box-shadow: 
+    0 -3px 2px -1px var(--shadow-dark) inset, // bottom
+    0 3px 2px -1px var(--shadow-light) inset, // top
+    3px 0 2px -1px var(--shadow-light) inset, // left
+    -3px 0 2px -1px var(--shadow-dark) inset, // right
+    0 -2px 2px -1px var(--shadow-medium), // top
+    0 2px 2px -1px var(--shadow-light), // bottom
+    2px 0 2px -1px var(--shadow-light), // right
+    -2px 0 2px -1px var(--shadow-medium); // left
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+
+  .window1 {
+	background-color: var(--header-color);
+	button, button:active {
+	  outline: 0;
+	}
+	button {
+	  text-transform: none;
+	  overflow: visible;
+	  text-align: center;
+	  font-size: 20px;
+	  line-height: 20px;
+	  border: 1px solid var(--border-color);
+	  padding: 1px 25px;
+	  margin: 0 5px;
+	  border-radius: 4px;
+	  font-family: "Chicago";
+	  text-decoration: none;
+	  cursor: url(../images/click.svg) 3 0,auto!important;
+	}
+  
+	button:hover {
+	  background-color: var(--button-background);
+	  -webkit-box-shadow: 
+		0 -2px 1px -1px var(--button-shadow-light) inset, 
+		0 2px 1px -1px var(--button-shadow-dark) inset, 
+		2px 0 1px -1px var(--button-shadow-dark) inset, 
+		-2px 0 1px -1px var(--button-shadow-light) inset;
+	  box-shadow: 
+		0 -2px 1px -1px var(--button-shadow-light) inset, 
+		0 2px 1px -1px var(--button-shadow-dark) inset, 
+		2px 0 1px -1px var(--button-shadow-dark) inset, 
+		-2px 0 1px -1px var(--button-shadow-light) inset;
+	}
+  }
