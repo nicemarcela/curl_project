@@ -15,12 +15,15 @@ const Post =
     product3, 
     linkURL,
     type,
-    backgroundColor
+    color
  }) => {
     return (
+        
         <div>
             <CardBody>
+               
                 <div className="window draggable window-2">
+                        
                         <header className="window-header">
                         <CardSubtitle>
                             <span className="text-info">{date}</span> by {' '}
@@ -32,7 +35,8 @@ const Post =
                 <div className='dragbar-right' id="resize-right"></div>
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
-                <div style={{backgroundColor: {backgroundColor} }}className="window-content">
+                <div  className="window-content">
+                <span style={{color}}>
                 
                 <CardTitle>
                     <Link to={slug}>
@@ -59,9 +63,10 @@ const Post =
                 </button>
                 </Link>
                 
+                </span>
+                </div>
+                </div>
                 
-                </div>
-                </div>
             </CardBody>
             
         </div>

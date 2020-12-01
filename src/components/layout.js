@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Sidebar from "./Sidebar"
 import '../styles/index.scss'
 
 import Icon from '../images/icon.png';
@@ -43,6 +44,9 @@ const Layout = ({ children, pageTitle }) => (
         <h1 className="title">{pageTitle}</h1>
           <Row>
             <Col md="8">{children}</Col>
+            <Col md="4">
+              <Sidebar />
+            </Col>
           </Row>
         </div>
       </>

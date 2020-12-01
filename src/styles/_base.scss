@@ -22,7 +22,6 @@ body {
 }
 
 a {
-  color: #220036;
   cursor: url(../images/click.svg) 3 0,auto!important;
   text-decoration: none;
 }
@@ -112,3 +111,30 @@ ul {
 //   background-color: rgb(255, 255, 255);
 //   opacity: 70%;
 // }
+
+@media only screen and (max-device-width: 640px) {
+  .nav-bar {
+    margin: 0;
+    height: 90px;
+    width: 100vw;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.container#content {
+    width: 100vw;
+    height: calc(100vh - 90px)!important;
+}
+
+.window-2 {
+  width: auto;
+  left: auto;
+}
+.card-title h2 {
+  font-size: 25px;
+}
+.card-text {
+  margin: 12px;
+  font-size: 14px;
+}
+}

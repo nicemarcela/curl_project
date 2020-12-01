@@ -38,8 +38,9 @@ $green: #f5ceff;
 		pointer-events: none;
 	}
 	background-repeat: repeat;
-    background-image: url(../images/waves.svg),linear-gradient(180deg,#5094bf 0%,#29c4a9 100%);
-    background-color: #4ea8c0;
+	background-image: url(../images/waves.svg),linear-gradient(180deg,#59a4d4 0%, #59ffe2 100%);
+    background-color: #4ea8c0;;
+    
 }
 
 .window-2 {
@@ -53,7 +54,7 @@ $green: #f5ceff;
 	max-height: calc(100% - 100px);
 	overflow-y: auto;
 	padding: 1rem;
-	margin: 20px 10px;
+	margin: 20px 30px;
 	h1 {
 		font-size: 2.5rem;
 		margin-bottom: 22px;
@@ -91,6 +92,10 @@ $green: #f5ceff;
 .singlepost-text {
 	margin: 45px;
 	font-size: 18px;
+	margin: 45px;
+    font-size: 18px;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 700;
 }
 
 [class*=window-control]{
@@ -136,6 +141,9 @@ $green: #f5ceff;
 
 .card-text {
 	margin: 40px;
+	font-size: 18px;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 600;
 }
 
 .card-title {
@@ -146,6 +154,14 @@ $green: #f5ceff;
   margin: 0 auto;
 } 
 
+.badge-pill {
+	margin: 0px 5px 40px 15px;
+}
+
+.badge-light {
+    color: #ffffff;
+	background-color: blueviolet;
+}
 ul.post-tags {
   padding: 0;
   display: inline-flex;
@@ -157,24 +173,23 @@ ul.post-tags {
 }
 
 .card-image {
-  width: 300px;
-  display: flex;
-  margin: 0 auto;
-  padding: 100px;
-}
-
-.card-image-top {
-	width: 300px;
-	margin: 0 auto;
-	padding: 100px;
+	width: 85%;
+    display: flex;
+    margin: 0 auto;
 }
 
 .media-heading {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
+	font-family: "Fredoka One",cursive;
+	color: #b974f9;
+    -webkit-text-stroke: 1px rgb(2, 1, 2);
 }
 
 .media-body {
 	margin: 10px;
+	font-family: 'Roboto Mono',monospace;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .highlighted {
@@ -245,3 +260,4 @@ ul.post-tags {
 		-2px 0 1px -1px var(--button-shadow-light) inset;
 	}
   }
+

@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from '../components/Post'
 
+
 const IndexPage = () => (
   <Layout pageTitle="What the Curl">
     <SEO title="Home" />
@@ -13,6 +14,7 @@ const IndexPage = () => (
       return (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
+            
             <Post 
             key={node.id}
             title={node.frontmatter.title}
@@ -23,8 +25,9 @@ const IndexPage = () => (
             fluid={node.frontmatter.image.childImageSharp.fluid}
             linkURL={node.frontmatter.linkURL}
             type={node.frontmatter.type}
-            backgroundColor={node.frontmatter.backgroundColor}
+            color= {node.frontmatter.color}
             />
+            
           ))}
         </div>
       )
@@ -43,36 +46,47 @@ query {
           linkURL
           title
           type
-          backgroundColor
+          color
           date(formatString:"MMM Do YYYY")
           product1 {
             title
             description
-            image {
-              publicURL
+            gallery {
+              image {
+                publicURL 
+              }
+              productURL
             }
-            productURL
+            
           }
           product2 {
             title
             description
-            image {
-              publicURL
+            gallery {
+              image {
+                publicURL
+                
+              }
+              productURL
             }
-            productURL
+            
           }
           product3 {
             title
             description
-            image {
-              publicURL
+            gallery {
+              image {
+                publicURL
+               
+              }
+              productURL
             }
-            productURL
+            
           }
           author
           image {
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }

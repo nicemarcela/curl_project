@@ -1,25 +1,47 @@
-import React from 'react'
-// import Layout from '../components/layout'
+import Layout from '../components/layout'
+import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import { CardBody, CardSubtitle, Media, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
 import Header from "../components/header"
+import Sidebar from "../components/Sidebar"
 
-const SinglePost = ({ data, pageContext}) => {
+const SinglePost = ({ data, pageContext, node}) => {
     const post = data.markdownRemark.frontmatter
-    
-    // const baseUrl = 'https://whathecurl.com'
-
-
+    const bgColor =  data.markdownRemark.frontmatter.color
+    const responsive = {
+      superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 1
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 1
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    };
 
     return (
-      <div>
+      
+      <Layout pageTitle={post.title}>
       <Header />
        <div className="container" id="content">
-         {/* <Layout pageTitle={post.title}> */}
-            
-            <SEO title={post.title} />
+         
+         <SEO
+            author={post.author}
+            title={post.title}
+            description={post.description}
+        />
             
             <CardBody pagetitle={post.title}>
             <div className="window draggable window-singlepost">
@@ -38,17 +60,26 @@ const SinglePost = ({ data, pageContext}) => {
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
 
-                <div className="window-content">
+                <div style={{bgColor}} className="window-content">
                   <h1>{post.title}</h1>
                   <Badge color="light" pill>{post.type}</Badge>
                   <Badge href={post.linkURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.author}</Badge>
-                  <Img className="card-image-top" fluid={post.image.childImageSharp.fluid} />
+                  <Img className="card-image" fluid={post.image.childImageSharp.fluid} />
                   <div className="singlepost-text" 
                   dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} >
                   </div>
-                    <Media className="mt-4">
-                      <Media href={post.product1.productURL} target="_blank" rel="noopener noreferrer" left top >
-                        <img style={{width: "100px"}} src={post.product1.image.publicURL} alt="Product" />
+
+                  <h2 style={{fontFamily: "Fredoka One", color: "#fffb0e", WebkitTextStroke: "2px #020102"}}>Fave Products & Techniques</h2>
+                    <Media className="mt-4" style={{display: "flex"}}>
+                    <Media style={{width: "40%"}} left top >
+                      <Carousel href={post.product1.gallery.productURL} responsive={responsive} dynamicHeight={true} autoPlay>
+                        {post.product1.gallery.map((galleryImage, index) => (
+                          <a style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                            <img className="product-image" src={galleryImage.image.publicURL} alt="Product" />
+                          </a>
+                        ))}
+                      </Carousel>
+                  
                       </Media>
                       <Media body>
                         <Media heading>
@@ -58,73 +89,47 @@ const SinglePost = ({ data, pageContext}) => {
                       </Media>
                     </Media>
 
-                    <Media className="mt-4">
-                      <Media href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
-                        <img style={{width: "100px"}} src={post.product2.image.publicURL} alt="Product" />
+                    <Media className="mt-4" style={{display: "flex"}}>
+                      <Media style={{width: "40%"}} href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
+                      <Carousel  autoPlay>
+                        {post.product2.gallery.map((galleryImage, index) => (
+                          <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                            <img src={galleryImage.image.publicURL} alt="Product" />
+                          </a>
+                        ))}
+                      </Carousel>
                       </Media>
                       <Media body>
-                        <Media heading>
+                      <Media heading>
                         {post.product2.title}
-                        </Media>
+                      </Media>
                         {post.product2.description}
                       </Media>
                     </Media>
 
-                    <Media className="mt-4">
-                      <Media href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
-                        <img style={{width: "100px"}} src={post.product3.image.publicURL} alt="Product" />
+                    <Media className="mt-4" style={{display: "flex"}}>
+                      <Media style={{width: "40%"}} href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
+                      <Carousel autoPlay>
+                        {post.product3.gallery.map((galleryImage, index) => (
+                          <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                            <img src={galleryImage.image.publicURL} alt="Product" />
+                          </a>
+                        ))}
+                      </Carousel>
                       </Media>
                       <Media body>
-                        <Media heading>
-                          {post.product3.title}
-                        </Media>
+                      <Media heading>
+                        {post.product3.title}
+                      </Media>
                         {post.product3.description}
                       </Media>
                     </Media>
                 </div>
                 </div>
             </CardBody>
-            {/* </Layout> */}
+            
             </div>
-       
-        {/* <h3 className="text-center">Share this post</h3>
-      <div className="text-center social-share-links">
-        <ul>
-          <li>
-            <a
-              href={
-                'https://www.facebook.com/sharer/sharer.php?u=' +
-                baseUrl +
-                pageContext.slug
-              }
-              className="facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook-f fa-2x" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={
-                'https://twitter.com/share?url=' +
-                baseUrl +
-                pageContext.slug +
-                '&text=' +
-                post.title +
-                '&via' +
-                'twitterHandle'
-              }
-              className="twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter fa-2x" />
-            </a>
-          </li>
-        </ul>
-      </div> */}
-      </div>
+            </Layout>
       
     )
 }
@@ -139,41 +144,52 @@ export const postQuery = graphql`
                 title
                 type
                 author
-                backgroundColor
+                color
                 date(formatString:"MMM Do YYYY")
                 product1 {
                   title
                   description
-                  image {
-                    publicURL
+                  gallery {
+                    image {
+                      publicURL
+                    }
+                    productURL
                   }
-                  productURL
+                  
                 }
                 product2 {
                   title
                   description
-                  image {
-                    publicURL
+                  gallery {
+                    image {
+                      publicURL
+                      
+                    }
+                    productURL
                   }
-                  productURL
+                 
                 }
                 product3 {
                   title
                   description
-                  image {
-                    publicURL
+                  gallery {
+                    image {
+                      publicURL
+                    }
+                    productURL
                   }
-                  productURL
+              
                 }
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 100) {
+                    fluid {
                       ...GatsbyImageSharpFluid
                     }
                   }
                 }
             }
         }
+        
     }
 
 `
