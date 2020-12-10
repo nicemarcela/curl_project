@@ -26,6 +26,9 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ff0095 !important;
+}
 .popover-txt {
   color: #220036;
   &:hover {

@@ -39,12 +39,12 @@ const Post =
                 <span style={{color}}>
                 
                 <CardTitle>
-                    <Link to={slug}>
+                    <Link to={`/${slug}/`}>
                        <h2>{title}</h2>
                     </Link>
                 </CardTitle>
                 
-                <Link to={slug}>
+                <Link to={`/${slug}/`}>
                     <Img className="card-image" fluid={fluid} />
                 </Link>
             {/* <h1 id='headline'>What The Curl</h1> */}
@@ -57,7 +57,7 @@ const Post =
                     
                 </CardText>
                 
-                <Link to={slug} className="float-right item window1">
+                <Link to={`/${slug}/`} className="float-right item window1">
                 <button className="double-shadow highlighted">
                 Read More
                 </button>
