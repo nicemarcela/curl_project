@@ -8,35 +8,31 @@ import {
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
-const RecentPosts = () => (
+const Sidebar = () => (
   <div>
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          You may also like...
+          Recent Posts
         </CardTitle>
         <StaticQuery
           query={sidebarQuery}
           render={data => (
-            <div style={{display: "-webkit-inline-box"}}>
+            <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Card className="window recent-post-card" key={node.id}>
-                  
-                  <Link to={`/${node.fields.slug}/`}>
+                <Card key={node.id}>
+                  <Link to={node.fields.slug}>
                     <Img
                       className="card-image-top"
                       fluid={node.frontmatter.image.childImageSharp.fluid}
                     />
                   </Link>
-                  <div className='dragbar-right' id="resize-right"></div>
-                <div className='dragbar-left' id="resize-left"></div>
-                <div className='dragbar-bottom' id="resize-bottom"></div>
                   <CardBody>
-                    <h5 className="recent-post-card-title">
-                      <Link to={`/${node.fields.slug}/`}>
+                    <CardTitle>
+                      <Link to={node.fields.slug}>
                         {node.frontmatter.title}
                       </Link>
-                    </h5>
+                    </CardTitle>
                   </CardBody>
                 </Card>
               ))}
@@ -76,4 +72,4 @@ export const sidebarQuery = graphql`
   }
 `
 
-export default RecentPosts
+export default Sidebar
