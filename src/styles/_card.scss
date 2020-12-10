@@ -137,6 +137,7 @@ $green: #f5ceff;
 
 .card {
   margin-bottom: 30px;
+  background-color: #b974f9;
 }
 
 .card-text {
@@ -147,9 +148,21 @@ $green: #f5ceff;
 }
 
 .card-title {
-	font-size: 23px;
+	font-size: 32px;
+	font-family: "Fredoka One",cursive;
+    color: #fffb0e;
+    -webkit-text-stroke: 2px #020102;
+    text-align: center;
+}
+.recent-post-card-title {
+	font-family: 'Fredoka One', cursive;
 }
 
+.recent-post-card {
+	width: 30%;
+    max-height: 500px;
+    margin: 15px;
+}
 .card-subtitle {
   margin: 0 auto;
 } 

@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 import { CardBody, CardSubtitle, Media, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
 import Header from "../components/header"
-import Sidebar from "../components/Sidebar"
+import RecentPosts from "../components/RecentPosts"
 
 const SinglePost = ({ data, pageContext, node}) => {
     const post = data.markdownRemark.frontmatter
@@ -32,8 +32,7 @@ const SinglePost = ({ data, pageContext, node}) => {
     };
 
     return (
-      
-      <Layout pageTitle={post.title}>
+      <div>
       <Header />
        <div className="container" id="content">
          
@@ -127,10 +126,9 @@ const SinglePost = ({ data, pageContext, node}) => {
                 </div>
                 </div>
             </CardBody>
-            
+            <RecentPosts />
             </div>
-            </Layout>
-      
+            </div>
     )
 }
 
