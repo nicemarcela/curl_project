@@ -77,7 +77,6 @@ query {
             gallery {
               image {
                 publicURL
-               
               }
               productURL
             }

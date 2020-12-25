@@ -161,7 +161,6 @@ export const postQuery = graphql`
                   gallery {
                     image {
                       publicURL
-                      
                     }
                     productURL
                   }

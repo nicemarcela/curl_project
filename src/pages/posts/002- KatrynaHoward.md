@@ -1,5 +1,5 @@
 ---
-title: 'Embracing FRIZZ and playing with VOLUME with Katryna Howard.  
+title: 'Embracing FRIZZ and playing with VOLUME by Katryna Howard.  
 Get to know her acceptance journey!'
 date: "2020-09-27"
 author: '@katt_daddy'
@@ -23,7 +23,7 @@ product1:
 
 product2: 
     title: 'Conditioning / Deep Conditioning'
-    description: 'I LOVE TGIN HONEY MIRACLE HAIR MASK, I use it as a deep conditioner and put a plastic cap over or put into braids/twists and steam my hair with a hand steamer before putting a cap over.  
+    description: 'I LOVE TGIN HONEY MIRACLE HAIR MASK, I use it as a deep conditioner and put a plastic cap over or put into braids/twists and steam my hair with a hand steamer before putting the cap over.  
     Cowash with INNERSENSE PURE INSPIRATION DAILY CONDITIONER or whatever I have on hand with good slip (I do not use my good conditioners for cowash just deep conditoning). Currently experimenting with RIZOS CURLS DEEP CONDITIONER and PATTERN DEEP CONDITIONER too. I cowash every 4-5 days. Deep condition every 1.5-2 weeks. '
     gallery:
     - image: "../../images/tgin.jpg"
@@ -37,16 +37,8 @@ product2:
 
 product3: 
     title: 'Styling'
-    description: 'My go tos in this order are: leave-in, cream, gel, then a refresh spray/oil to revive day 2-5 curls. Sometimes I switch it up with layering to see what products work well together. 
-    - Kinky Curly Knot Today leave-in  
-    - Innersense Quiet Curl Cream  
-    - Innersense i create hold gel or Eco style gel black castor oil + flax gels  
-    - to refresh curls: water/ Rizos Curls spray / Olaplex bonding oil  
-
-    I sometimes switch out above products with:  
-    - Rizos Curls Curl Defining Cream  
-    - Pattern leave-in, strong hold gel, Curl Cream  
-    - Recently have also been loving Rizos Curls Flexi dentangling brush, it actually works really well with my hair unlike a Denman brush'
+    description: '"My go tos in this order are: leave-in, cream, gel, then a refresh spray/oil to revive day 2-5 curls." Some of the products she loves: Kinky Curly Knot Today leave-in, Innersense Quiet Curl Cream, Innersense I create hold gel, and Eco style gel black castor oil + flax seed.'
+    
     gallery:
     - image: "../../images/kinkycurlyknottoday.jpg"
       productURL: "https://www.amazon.com/Kinky-Curly-Today-Leave-Conditioner-Detangler/dp/B00128WK4I"
@@ -107,7 +99,7 @@ Since eliminating devacurl from my routine about 8 months ago now, my go tos hav
 
  \* Kinky Curly Knot Today leave-in  
  \* Innersense Quiet Curl Cream  
- \* Innersense i create hold gel or Eco style gel black castor oil + flax gels  
+ \* Innersense i create hold gel or Eco style gel black castor oil + flax seed  
  \* to refresh curls: water/ Rizos Curls spray / Olaplex bonding oil  
 
 I sometimes switch out above products with:  

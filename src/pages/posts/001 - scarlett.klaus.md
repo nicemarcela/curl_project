@@ -10,7 +10,7 @@ color: "background-color: ffffff"
 product1: 
     title: 'Cleansing: As I Am Naturally Coconut Cowash'
     description: '"It cleanses, moisturizes, and detangles my hair nicely. I usually use that for both shampoo and conditioner. Sometimes I switch it up and use a clarifying shampoo - honestly any with sulfates works."
-    As I am says this cowash is different from any other because it contains a special blend of natural ingredients that work to promote healthy hair growth from the follicular level, and many other curly girls approve it.'
+    As I Am says this cowash is different from any other because it contains a special blend of natural ingredients that work to promote healthy hair growth from the follicular level, and many other curly girls approve it.'
     gallery:
     - image: "../../images/coconutcowash.jpg"
       productURL: "https://www.amazon.com/Am-Coconut-Cowash-Cleansing-Conditioner/dp/B00641UCY8"
@@ -26,7 +26,7 @@ product3:
     title: 'Styling: As I Am Naturally Coconut Leave-in and Ogx Coconut Curls Mousse'
     description: '"I section my hair, and tie my bangs up. I go through and apply a cream to my hair, brush that, shake it, and scrunch in mousse. It’s a bit hard to describe with words lol. I should also add, I pineapple at night, and refresh with water everyday."'
     gallery:
-        - image: "../../images/coconutleavein.png"
+        - image: "../../images/coconutleavein.jpg"
           productURL: "https://www.asiamnaturally.com/collections/best-sellers/products/leave-in-conditioner?variant=261909872658"
         - image: "../../images/ogxmousse.jpg"
           productURL: "https://www.amazon.com/Locking-Coconut-Decadent-Creamy-Mousse/dp/B076RW5LKG"
