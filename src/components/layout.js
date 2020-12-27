@@ -42,11 +42,9 @@ const Layout = ({ children, pageTitle }) => (
         <div className="container" id="content">
         <img className="icon" src={Icon} alt="" />
         <h1 className="title">{pageTitle}</h1>
-          <Row>
+          <div className="row justify-content-center">
             <Col md="8">{children}</Col>
-            <Col md="4">
-            </Col>
-          </Row>
+          </div>
         </div>
       </>
     )}

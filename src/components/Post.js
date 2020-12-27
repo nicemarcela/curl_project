@@ -22,34 +22,34 @@ const Post =
         <div>
             <CardBody>
                
-                <div className="window draggable window-2">
+                <div className="window window-2">
                         
-                        <header className="window-header">
-                        <CardSubtitle>
-                            <span className="text-info">{date}</span> by {' '}
-                            <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
-                        </CardSubtitle>
-                            <nav className="window-controls">
-                            </nav>
-                        </header>
+                <header className="window-header">
+                <CardSubtitle>
+                    <span className="text-info">{date}</span> by {' '}
+                    <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
+                </CardSubtitle>
+                    <nav className="window-controls">
+                    </nav>
+                </header>
                 <div className='dragbar-right' id="resize-right"></div>
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
-                <div  className="window-content">
+                <div  className="window-content p-4">
                 <span style={{color}}>
                 
                 <CardTitle>
                     <Link to={`/${slug}/`}>
-                       <h2>{title}</h2>
+                    <h2>{title}</h2>
                     </Link>
                 </CardTitle>
                 
                 <Link to={`/${slug}/`}>
-                    <Img className="card-image" fluid={fluid} />
+                    <Img className="card-image my-4 w-100" fluid={fluid} />
                 </Link>
             {/* <h1 id='headline'>What The Curl</h1> */}
                 
-                <CardText>
+                <CardText className="mx-0 mb-4">
                     {body}
                     {product1}
                     {product2}

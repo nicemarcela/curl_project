@@ -42,7 +42,7 @@ const SinglePost = ({ data, pageContext, node}) => {
             description={post.description}
         />
             
-            <CardBody pagetitle={post.title}>
+            <CardBody pagetitle={post.title} className="p-0 mb-4">
             <div className="window draggable window-singlepost">
                 <header className="window-header">
                 <CardSubtitle>
@@ -59,64 +59,61 @@ const SinglePost = ({ data, pageContext, node}) => {
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
 
-                <div style={{bgColor}} className="window-content">
+                <div style={{bgColor}} className="window-content p-4">
                   <h1>{post.title}</h1>
-                  <Badge color="light" pill>{post.type}</Badge>
-                  <Badge href={post.linkURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.author}</Badge>
-                  <Img className="card-image" fluid={post.image.childImageSharp.fluid} />
+                  <div className="text-center">
+                    <Badge color="light mb-2 text-center mr-2" pill>{post.type}</Badge>
+                    <Badge href={post.linkURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.author}</Badge>
+                  </div>
+              
+                  <Img className="card-image my-4 w-100" fluid={post.image.childImageSharp.fluid} />
                   <div className="singlepost-text" 
                   dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} >
                   </div>
 
-                  <h2 style={{fontFamily: "Fredoka One", color: "#fffb0e", WebkitTextStroke: "2px #020102"}}>Fave Products & Techniques</h2>
-                    <Media className="mt-4" style={{display: "flex"}}>
-                    <Media style={{width: "40%"}} left top >
-                      <Carousel href={post.product1.gallery.productURL} responsive={responsive} dynamicHeight={true} autoPlay>
-                        {post.product1.gallery.map((galleryImage, index) => (
-                          <a style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
-                            <img className="product-image" src={galleryImage.image.publicURL} alt="Product" />
-                          </a>
-                        ))}
-                      </Carousel>
-                  
+                  <h2 className="my-4 my-lg-5" style={{fontFamily: "Fredoka One", color: "#fffb0e", WebkitTextStroke: "2px #020102"}}>Fave Products & Techniques</h2>
+                  <Media className="row">
+                    <Carousel className="col-12 col-lg-5" href={post.product1.gallery.productURL} responsive={responsive} dynamicHeight={true} autoPlay>
+                      {post.product1.gallery.map((galleryImage, index) => (
+                        <a style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                          <img className="product-image" src={galleryImage.image.publicURL} alt="Product" />
+                        </a>
+                      ))}
+                    </Carousel>
+                
+                    <Media className="col-12 col-lg-7" body>
+                      <Media heading>
+                        {post.product1.title}
                       </Media>
-                      <Media body>
-                        <Media heading>
-                          {post.product1.title}
-                        </Media>
-                        {post.product1.description}
-                      </Media>
+                      {post.product1.description}
                     </Media>
+                  </Media>
 
-                    <Media className="mt-4" style={{display: "flex"}}>
-                      <Media style={{width: "40%"}} href={post.product2.productURL} target="_blank" rel="noopener noreferrer" left middle>
-                      <Carousel  autoPlay>
-                        {post.product2.gallery.map((galleryImage, index) => (
-                          <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
-                            <img src={galleryImage.image.publicURL} alt="Product" />
-                          </a>
-                        ))}
-                      </Carousel>
-                      </Media>
-                      <Media body>
+                  <Media className="row mt-4">
+                    <Carousel className="col-12 col-lg-5" autoPlay>
+                      {post.product2.gallery.map((galleryImage, index) => (
+                        <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                          <img src={galleryImage.image.publicURL} alt="Product" />
+                        </a>
+                      ))}
+                    </Carousel>
+                    <Media className="col-12 col-lg-7" body>
                       <Media heading>
                         {post.product2.title}
                       </Media>
-                        {post.product2.description}
-                      </Media>
+                      {post.product2.description}
                     </Media>
+                  </Media>
 
-                    <Media className="mt-4" style={{display: "flex"}}>
-                      <Media style={{width: "40%"}} href={post.product3.productURL} target="_blank" rel="noopener noreferrer" left bottom>
-                      <Carousel autoPlay>
-                        {post.product3.gallery.map((galleryImage, index) => (
-                          <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
-                            <img src={galleryImage.image.publicURL} alt="Product" />
-                          </a>
-                        ))}
-                      </Carousel>
-                      </Media>
-                      <Media body>
+                  <Media className="row mt-4">
+                    <Carousel className="col-12 col-lg-5" autoPlay>
+                      {post.product3.gallery.map((galleryImage, index) => (
+                        <a  style={{display: "block" }} aria-hidden="true" key={index} href={galleryImage.productURL} target="_blank" rel="noopener noreferrer">
+                          <img src={galleryImage.image.publicURL} alt="Product" />
+                        </a>
+                      ))}
+                    </Carousel>
+                    <Media className="col-12 col-lg-7" body>
                       <Media heading>
                         {post.product3.title}
                       </Media>

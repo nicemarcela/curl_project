@@ -27,7 +27,8 @@ a {
 }
 
 a:hover {
-  color: #ff0095 !important;
+  color: blueviolet !important;
+  text-decoration: none;
 }
 .popover-txt {
   color: #220036;
@@ -85,6 +86,7 @@ ul {
 
 .nav-link {
   font-size: 17px;
+  line-height: 12px;
   cursor: url(../images/click.svg) 3 0,auto!important;
   color: #000;
   span {
@@ -114,15 +116,15 @@ ul {
 //   background-color: rgb(255, 255, 255);
 //   opacity: 70%;
 // }
-
-@media only screen and (max-device-width: 640px) {
+@media (max-width: 1024px) { 
+  
   .nav-bar {
     margin: 0;
     height: 90px;
     width: 100vw;
-    bottom: 20px;
-    display: flex;
+    display: flex-row;
     align-items: center;
+    position: relative;
 }
 .container#content {
     width: 100vw;
