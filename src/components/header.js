@@ -32,19 +32,17 @@ class Header extends React.Component {
   render() {
     return (
         <div className="nav-bar">
-            <Nav vertical >
+            <Nav className="justify-content-center">
               <NavItem>
                 <NavLink href="/">
                 <img style={{width: "50px", imageRendering: "pixelated"}} alt="" src={Icon}/>
-                <span>Home</span>
+                <span className="d-block mt-2">Home</span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="" id="PopoverLegacy" type="button">
                 <img alt="" src={About}/>
-                <span 
-                // className={this.state.button ? "buttonTrue": "buttonFalse"} onClick={this.handleClick} 
-                >WTC.txt</span>
+                <span className="d-block mt-2">WTC.txt</span>
                 </NavLink>
                 <UncontrolledPopover trigger="legacy" placement="right" target="PopoverLegacy">
                     <PopoverHeader  style={{fontFamily: "Chicago"}}>About Us</PopoverHeader>
@@ -58,8 +56,8 @@ class Header extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink target="_blank" rel="noopener noreferrer"href="https://www.instagram.com/whathecurl">
-                <img alt="" src={Instagram}/>
-                <span>Instagram</span>
+                <img className="mb-2" alt="" src={Instagram}/>
+                <span className="d-block mt-2">Instagram</span>
                 </NavLink>
               </NavItem>
             </Nav>

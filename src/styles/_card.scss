@@ -44,8 +44,7 @@ $green: #f5ceff;
 }
 
 .window-2 {
-	left: 200px;
-  width: 700px;
+  max-width: 700px;
 //   background: $green;
   margin: 0 auto;
 }
@@ -53,10 +52,14 @@ $green: #f5ceff;
 .window-content {
 	max-height: calc(100% - 100px);
 	overflow-y: auto;
-	padding: 1rem;
-	margin: 20px 30px;
 	h1 {
 		font-size: 2.5rem;
+		margin-bottom: 22px;
+	}
+}
+@media (max-width: 1024px) { 
+	.window-content > h1 {
+		font-size: 2rem;
 		margin-bottom: 22px;
 	}
 }
@@ -84,15 +87,13 @@ $green: #f5ceff;
 }
 
 .window-singlepost {
-	width: 800px;
+	max-width: 800px;
     // background: #f5ceff;
     margin: 0 auto;
 }
 
 .singlepost-text {
-	margin: 45px;
 	font-size: 18px;
-	margin: 45px;
     font-size: 18px;
     font-family: 'Roboto Mono',monospace;
     font-weight: 700;
@@ -147,12 +148,16 @@ $green: #f5ceff;
     font-weight: 600;
 }
 
-.card-title {
+.card-title, .card-title a {
 	font-size: 32px;
 	font-family: "Fredoka One",cursive;
     color: #fffb0e;
     -webkit-text-stroke: 2px #020102;
     text-align: center;
+}
+.card-title a:hover{
+	text-decoration:none;
+	color: #fffb0e!important;
 }
 .recent-post-card-title {
 	font-family: 'Fredoka One', cursive;
@@ -165,10 +170,6 @@ $green: #f5ceff;
 }
 .card-subtitle {
   margin: 0 auto;
-} 
-
-.badge-pill {
-	margin: 0px 5px 40px 15px;
 }
 
 .badge-light {
