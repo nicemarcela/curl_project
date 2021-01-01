@@ -26,7 +26,7 @@ const Post =
                         
                 <header className="window-header">
                 <CardSubtitle>
-                    <span className="text-info">{date}</span> by {' '}
+                    <span className="card-subtitle">{date}</span> by {' '}
                     <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
                 </CardSubtitle>
                     <nav className="window-controls">

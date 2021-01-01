@@ -49,9 +49,13 @@ class Header extends React.Component {
                     <PopoverBody style={{fontFamily: "Roboto Mono,monospace"}}>
                       We wander the world to display the best curl inspo on your screen. <br />
                       Built by the community for the community, based on the opinion and tests of real people that have the same hair type as you. 
-                      <br /> So, take a look around, inspire yourself, click what you love, read what you want, and only buy what you need.
                       <br />
-                      <br /> We're slowly building our community and would love to listen your feedback, say hello here: hello.whathecurl@gmail.com</PopoverBody>
+                      <br /> Take a look around, inspire yourself, click what you love, read what you want, and only buy what you need.
+                      
+                      <br />
+                      <br /> We're slowly building our community and would love to listen your feedback, say hello here: hello.whathecurl@gmail.com or DM us on Insta ✍️
+                      </PopoverBody>
+                
                 </UncontrolledPopover>
               </NavItem>
               <NavItem>
