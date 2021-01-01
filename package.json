@@ -58,10 +58,6 @@
   ],
   "license": "0BSD",
   "scripts": {
-<<<<<<< Updated upstream
-=======
-    "deploy:github": "npm run build && node ./scripts/deploy-github",
->>>>>>> Stashed changes
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
