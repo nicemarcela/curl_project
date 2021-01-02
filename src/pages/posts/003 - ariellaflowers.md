@@ -1,6 +1,6 @@
 ---
 title: 'Transitioning to curls: The labor of love by @ariellaflowers'
-date: "2020-09-20"
+date: "2021-01-01"
 author: '@ariellaflowers'
 linkURL: "https://www.instagram.com/ariellaflowers/"
 image: "../../images/ariellaflowers.png"

@@ -1,7 +1,7 @@
 ---
 title: 'Embracing FRIZZ and playing with VOLUME by Katryna Howard.  
 Get to know her acceptance journey!'
-date: "2020-09-27"
+date: "2021-01-02"
 author: '@katt_daddy'
 linkURL: "https://www.instagram.com/katt_daddy/"
 image: "../../images/kattdaddy.png"
@@ -93,7 +93,7 @@ The most difficult aspect of when Kat, *and the majority of us*, was learning to
 "Because they are clean products that I've tested that work really well and are buildable with my hair. Being conscious and intentional with clean/organic ingredients is something I'd like to learn more about. 
 As well as Rizos curls, it's Latina made/owned and you get alot of product for your money. I prioritize being intentional with supporting Black/Brown/Women-owned businesses whenever possible, they are slowly being carried in accessible stores like Target."
 
-#####Her styling go-to's:
+#####Her styling go-tos:
 
 Since eliminating DevaCurl from my routine about 8 months ago now, my go tos have been: 
 

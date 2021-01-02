@@ -59,7 +59,7 @@ const SinglePost = ({ data, pageContext, node}) => {
                 <div className='dragbar-left' id="resize-left"></div>
                 <div className='dragbar-bottom' id="resize-bottom"></div>
 
-                <div style={{bgColor}} className="window-content p-4">
+                <div style={{bgColor}} className="window-content p-2">
                   <h1>{post.title}</h1>
                   <div className="text-center">
                     <Badge color="light mb-2 text-center mr-2" pill>{post.type}</Badge>

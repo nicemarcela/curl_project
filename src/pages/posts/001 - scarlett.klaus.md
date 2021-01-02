@@ -1,6 +1,6 @@
 ---
 title: '@scarlett.klaus: how to give loose waves the boost and hold to form curls'
-date: "2020-09-13"
+date: "2020-12-31"
 author: '@scarlett.klaus'
 linkURL: "https://www.instagram.com/scarlett.klaus/"
 image: "../../images/scarlett.png"

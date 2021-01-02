@@ -59,8 +59,21 @@ $green: #f5ceff;
 }
 @media (max-width: 1024px) { 
 	.window-content > h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-bottom: 22px;
+		-webkit-text-stroke: 1px #020102;
+	}
+	.card-text{
+		font-size: 1rem!important;
+	}
+	.singlepost-text p{
+		font-size: 1rem!important;
+	}
+	.media-body {
+		margin: 10px;
+		font-family: 'Roboto Mono',monospace;
+		font-weight: bold;
+		font-size: 1rem;
 	}
 }
 
@@ -92,9 +105,8 @@ $green: #f5ceff;
     margin: 0 auto;
 }
 
-.singlepost-text {
+.singlepost-text p{
 	font-size: 18px;
-    font-size: 18px;
     font-family: 'Roboto Mono',monospace;
     font-weight: 700;
 }

@@ -20,7 +20,7 @@ const Post =
     return (
         
         <div>
-            <CardBody>
+            <div className="card-body px-0">
                
                 <div className="window window-2">
                         
@@ -67,7 +67,7 @@ const Post =
                 </div>
                 </div>
                 
-            </CardBody>
+            </div>
             
         </div>
     )
