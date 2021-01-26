@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   Card,
-  CardTitle,
   CardBody,
 
 } from 'reactstrap'

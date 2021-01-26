@@ -15,7 +15,7 @@ import '../styles/index.scss'
 
 import Icon from '../images/icon.png';
 
-import { Row, Col } from 'reactstrap'
+import { Col } from 'reactstrap'
 
 const Layout = ({ children, pageTitle }) => (
   <StaticQuery

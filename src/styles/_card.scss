@@ -75,6 +75,21 @@ $green: #f5ceff;
 		font-weight: bold;
 		font-size: 1rem;
 	}
+	.mailinput {
+		top: 120px !important;
+		left: 38px !important;
+		font-size: 11px!important;
+	}
+	.mailform {
+		width: 100%!important;
+	}
+
+	.mailbtn {
+		top: 144px !important;
+		left: 82px !important;
+		font-size: 10px!important;
+		line-height: normal!important;
+	}
 }
 
 .window-header {
@@ -129,6 +144,9 @@ $green: #f5ceff;
 	position: absolute;
 	background: $black;
 }
+
+
+
 .dragbar-right {
 	right: 0;
 	top: 0;
@@ -153,18 +171,19 @@ $green: #f5ceff;
   background-color: #b974f9;
 }
 
-.card-text {
+.card-text, .card-text a {
 	margin: 40px;
 	font-size: 18px;
     font-family: 'Roboto Mono',monospace;
-    font-weight: 600;
+	font-weight: 600;
+	color: #000;
 }
 
 .card-title, .card-title a {
 	font-size: 32px;
 	font-family: "Fredoka One",cursive;
     color: #fffb0e;
-    -webkit-text-stroke: 2px #020102;
+    -webkit-text-stroke: 1px #020102;
     text-align: center;
 }
 .card-title a:hover{
@@ -242,6 +261,43 @@ ul.post-tags {
     0 2px 2px -1px var(--shadow-light), // bottom
     2px 0 2px -1px var(--shadow-light), // right
     -2px 0 2px -1px var(--shadow-medium); // left
+}
+
+.mailinput {
+    text-transform: none;
+    overflow: visible;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid var(--border-color);
+    padding: 1px 25px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-family: "Chicago";
+    text-decoration: none;
+	position: absolute;
+	top: 240px;
+    left: 244px;
+}
+
+.mailform {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.mailwrapper {
+	position: relative;
+}
+
+.mailbtn {
+	top: 283px;
+    left: 317px;
+    position: absolute;
 }
 
 .item {

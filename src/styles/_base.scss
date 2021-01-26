@@ -24,6 +24,7 @@ body {
 a {
   cursor: url(../images/click.svg) 3 0,auto!important;
   text-decoration: none;
+  color:rgb(168, 94, 238) ;
 }
 
 a:hover {
@@ -94,7 +95,6 @@ ul {
 
   }
   
-  
 }
 
 .nav-link span {
@@ -138,4 +138,5 @@ ul {
   font-size: 25px;
   -webkit-text-stroke: 1px #020102;
 }
+
 }

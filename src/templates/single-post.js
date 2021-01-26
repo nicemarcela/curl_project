@@ -8,6 +8,7 @@ import { CardBody, CardSubtitle, Media, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
 import Header from "../components/header"
 import RecentPosts from "../components/RecentPosts"
+import MailChimpForm from "../components/MailchimpForm"
 
 const SinglePost = ({ data, pageContext, node}) => {
     const post = data.markdownRemark.frontmatter
@@ -70,6 +71,7 @@ const SinglePost = ({ data, pageContext, node}) => {
                   <div className="singlepost-text" 
                   dangerouslySetInnerHTML = {{ __html: data.markdownRemark.html }} >
                   </div>
+                  <MailChimpForm />
 
                   <h2 className="my-4 my-lg-5" style={{fontFamily: "Fredoka One", color: "#fffb0e", WebkitTextStroke: "2px #020102"}}>Fave Products & Techniques</h2>
                   <Media className="row">

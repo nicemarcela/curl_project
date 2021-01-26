@@ -3,11 +3,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from '../components/Post'
+import MailChimpForm from "../components/MailchimpForm"
 
 
 const IndexPage = () => (
+  
   <Layout pageTitle="What the Curl">
     <SEO title="Home" />
+    
     <StaticQuery 
     query={IndexQuery} 
     render={data => {
@@ -33,6 +36,7 @@ const IndexPage = () => (
       )
     }}
     />
+    <MailChimpForm />
   </Layout>
 )
 
