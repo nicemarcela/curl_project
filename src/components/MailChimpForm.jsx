@@ -1,5 +1,6 @@
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import Form from "../images/mailform.png"
+import FormSuccess from "../images/mailformsuccess.png"
 import React from "react"
 
 export default class MailChimpForm extends React.Component {
@@ -21,7 +22,7 @@ export default class MailChimpForm extends React.Component {
   }
   render() {
     return this.state.result === "success" ? (
-      <div>SUCCESS</div>
+      <div><img className="mailform" src={FormSuccess} alt=""></img></div>
     ) : this.state.result === "error" ? (
       <div>ERROR</div>
     ) : (

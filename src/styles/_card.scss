@@ -38,7 +38,8 @@ $green: #f5ceff;
 		pointer-events: none;
 	}
 	background-repeat: repeat;
-	background-image: url(../images/waves.svg),linear-gradient(180deg,#59a4d4 0%, #59ffe2 100%);
+//	background-image: url(../images/waves.svg),linear-gradient(180deg,#59a4d4 0%, #59ffe2 100%);
+    background-image: url(../images/waves.png),linear-gradient(180deg,#5fd9ec 0%, #b2ddf5 100%);
     background-color: #4ea8c0;;
     
 }
@@ -122,8 +123,7 @@ $green: #f5ceff;
 
 .singlepost-text p{
 	font-size: 18px;
-    font-family: 'Roboto Mono',monospace;
-    font-weight: 700;
+    font-family: 'BioRhyme', serif;
 }
 
 [class*=window-control]{
@@ -174,8 +174,7 @@ $green: #f5ceff;
 .card-text, .card-text a {
 	margin: 40px;
 	font-size: 18px;
-    font-family: 'Roboto Mono',monospace;
-	font-weight: 600;
+    font-family:'BioRhyme', serif;
 	color: #000;
 }
 
@@ -233,8 +232,7 @@ ul.post-tags {
 
 .media-body {
 	margin: 10px;
-	font-family: 'Roboto Mono',monospace;
-	font-weight: bold;
+	font-family: 'BioRhyme', serif;
 	font-size: 18px;
 }
 

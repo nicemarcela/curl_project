@@ -8,7 +8,7 @@ import { CardBody, CardSubtitle, Media, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
 import Header from "../components/header"
 import RecentPosts from "../components/RecentPosts"
-import MailChimpForm from "../components/MailchimpForm"
+import MailChimpForm from "../components/MailChimpForm"
 
 const SinglePost = ({ data, pageContext, node}) => {
     const post = data.markdownRemark.frontmatter

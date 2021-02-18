@@ -10,9 +10,9 @@ color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing '
-    description: 'I alternate between sulfate-free/hydrating shampoo (BLACK VANILLA MOISTURE & SHINE SULFATE-FREE SHAMPOO by Carol Daughter) and every 2-3 weeks a clarifying shampoo (TEA TREE TINGLE - Trader Joe). Sometimes depending on my hair needs (6-8 weeks) I will also use the OLAPLEX no.3 before shampooing for extra strength after taking out braids, or APHOGEE TWO-STEP PROTEIN TREATMENT to help revive my curls if they are looking extra limp, not as defined, etc. '
+    description: 'I alternate between sulfate-free/hydrating shampoo (BLACK VANILLA MOISTURE & SHINE SULFATE-FREE SHAMPOO by Carols Daughter) and every 2-3 weeks a clarifying shampoo (TEA TREE TINGLE - Trader Joe). Sometimes depending on my hair needs (6-8 weeks) I will also use the OLAPLEX no.3 before shampooing for extra strength after taking out braids, or APHOGEE TWO-STEP PROTEIN TREATMENT to help revive my curls if they are looking extra limp, not as defined, etc. '
     gallery:
-    - image: "../../images/blackvanilla.jpg"
+    - image: "../../images/CarolsDaughterBlackVanillaShampoo.jpg"
       productURL: "https://www.carolsdaughter.com/black-vanilla-moisture-shine-sulfate-free-shampoo/820645226067.html?cgid=hair-collection-black-vanilla#start=4&cgid=hair-collection-black-vanilla"
     - image: "../../images/teatreetingle.jpg"
       productURL: "https://www.amazon.com/Trader-Joes-Peppermint-Eucalyptus-Botanicals/dp/B002LMBLTY"
