@@ -1,8 +1,33 @@
 .site-footer {
-  background-color: $white;
-  margin-top: 20px;
-  padding: 10px;
+  background-color: #fffaed;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+.first-col {
+  display: flex;
+    margin: 20px;
+    flex-direction: column;
+    width: 25%;
+}
+
+.second-col {
+  align-items: flex-end;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  width: 25%;
+}
+
+#explore {
+  font-family: "Fredoka One",cursive;
+  font-size: 24px;
+  color: #fffb0e;
+  -webkit-text-stroke: 1px #020102;
   text-align: center;
+}
 
   .footer-social-links {
     text-align: center;

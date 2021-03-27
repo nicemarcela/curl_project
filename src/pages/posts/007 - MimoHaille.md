@@ -2,11 +2,12 @@
 
 title: 'Social Impact activist, Mimo Haile, takes us into her healing journey through self-care and entrepreneurship. '
 date: "2021-01-30"
-author: '@the_mimos'
-linkURL: "https://www.instagram.com/the_mimos/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@the_mimos'
+instaURL: "https://www.instagram.com/the_mimos/"
 image: "../../images/mimo.png"
 type: 'Hair Type: 3A/3B/3C'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

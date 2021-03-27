@@ -2,11 +2,12 @@
 
 title: 'Curl Specialist, Roxy Reaves on her mission to help people celebrate their natural hair texture.'
 date: "2021-02-13"
-author: '@coastal.curl' 
-linkURL: "https://www.instagram.com/coastal.curl/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@coastal.curl'
+instaURL: "https://www.instagram.com/coastal.curl/"
 image: "../../images/roxy.png"
 type: 'Hair Type: 3C/4A'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

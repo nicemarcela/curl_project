@@ -1,11 +1,13 @@
 ---
+
 title: 'Transitioning to curls: The labor of love by @ariellaflowers'
 date: "2021-01-01"
-author: '@ariellaflowers'
-linkURL: "https://www.instagram.com/ariellaflowers/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@ariellaflowers'
+instaURL: "https://www.instagram.com/ariellaflowers/"
 image: "../../images/ariellaflowers.png"
 type: 'Hair Type: 4a/4b/4c'
-color: "background-color: #000000"
 
 product1: 
     title: 'Cleansing: Aloe Vera + Olaplex no.4'
@@ -32,7 +34,7 @@ product3:
     title: 'Styling: LCO Method'
     description: '"I finger detangle then continue to the LCO method (leave-in, cream, oil) with Curls To Go leave-in conditioner by Jane Carter Solution, then Extreme Wetline gel or Phyto Gel Crème, CocoKind Watermelon Hemp oil, and my own hair CBD spray that I make."'
     gallery:
-        - image: "../../images/curlstogo.webp"
+        - image: "../../images/curlstogo.png"
           productURL: "https://www.janecartersolution.com/products/un-tangle-me-weightless-leave-in-8-oz"
         - image: "../../images/phytogelcreme.jpg"
           productURL: "https://www.phyto.fr/242963/gel-creme-sculpteur-de-boucles.html"

@@ -3,6 +3,7 @@ import React from "react"
 import About from "../images/about.png"
 import Instagram from "../images/insta.png"
 import Icon from "../images/icon.png"
+import Submit from "../images/submit2.png"
 
 import {
   // NavbarBrand,
@@ -51,7 +52,6 @@ class Header extends React.Component {
                       Built by the community for the community, based on the opinion and tests of real people that have the same hair type as you. 
                       <br />
                       <br /> Take a look around, inspire yourself, click what you love, read what you want, and only buy what you need.
-                      
                       <br />
                       <br /> We're slowly building our community and would love to listen your feedback, say hello here: hello.whathecurl@gmail.com or DM us on Insta ✍️
                       </PopoverBody>
@@ -62,6 +62,12 @@ class Header extends React.Component {
                 <NavLink target="_blank" rel="noopener noreferrer"href="https://www.instagram.com/whathecurl">
                 <img className="mb-2" alt="" src={Instagram}/>
                 <span className="d-block mt-2">Instagram</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/submit">
+                <img className="mb-2" alt="" src={Submit}/>
+                <span style={{ imageRendering: "pixelated"}} className="d-block mt-2">Submit</span>
                 </NavLink>
               </NavItem>
             </Nav>

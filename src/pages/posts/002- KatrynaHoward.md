@@ -1,12 +1,14 @@
 ---
+
 title: 'Embracing FRIZZ and playing with VOLUME by Katryna Howard.  
 Get to know her acceptance journey!'
 date: "2021-01-02"
-author: '@katt_daddy'
-linkURL: "https://www.instagram.com/katt_daddy/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@katt_daddy'
+instaURL: "https://www.instagram.com/katt_daddy/"
 image: "../../images/kattdaddy.png"
 type: 'Hair Type: 4A'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing '

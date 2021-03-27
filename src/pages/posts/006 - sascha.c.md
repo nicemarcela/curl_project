@@ -2,11 +2,12 @@
 
 title: 'Sascha Jenelle: Overcoming frustration through learning to take care of her fine curls.'
 date: "2021-01-23"
-author: '@sascha.c'
-linkURL: "https://www.instagram.com/sascha.c/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@sascha.c'
+instaURL: "https://www.instagram.com/sascha.c/"
 image: "../../images/sascha.png"
 type: 'Hair Type: 3C/4A'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

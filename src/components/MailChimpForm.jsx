@@ -37,6 +37,7 @@ export default class MailChimpForm extends React.Component {
                 type="email"
                 name="email"
                 autoComplete="email"
+                autoCapitalize= "none"
                 variant="outlined"
                 onChange={this.handleChange}
                 />

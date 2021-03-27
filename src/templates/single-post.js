@@ -9,6 +9,7 @@ import Img from 'gatsby-image'
 import Header from "../components/header"
 import RecentPosts from "../components/RecentPosts"
 import MailChimpForm from "../components/MailChimpForm"
+import Footer from "../components/Footer"
 
 const SinglePost = ({ data, pageContext, node}) => {
     const post = data.markdownRemark.frontmatter
@@ -64,7 +65,7 @@ const SinglePost = ({ data, pageContext, node}) => {
                   <h1>{post.title}</h1>
                   <div className="text-center">
                     <Badge color="light mb-2 text-center mr-2" pill>{post.type}</Badge>
-                    <Badge href={post.linkURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.author}</Badge>
+                    <Badge href={post.instaURL} target="_blank" rel="noopener noreferrer" color="light" pill>{post.instagrammer}</Badge>
                   </div>
               
                   <Img className="card-image my-4 w-100" fluid={post.image.childImageSharp.fluid} />
@@ -127,6 +128,7 @@ const SinglePost = ({ data, pageContext, node}) => {
             </CardBody>
             <RecentPosts />
             </div>
+            < Footer/>
             </div>
     )
 }
@@ -138,10 +140,11 @@ export const postQuery = graphql`
             html
             frontmatter {
                 linkURL
+                instaURL
                 title
                 type
                 author
-                color
+                instagrammer
                 date(formatString:"MMM Do YYYY")
                 product1 {
                   title

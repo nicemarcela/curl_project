@@ -1,11 +1,13 @@
 ---
+
 title: '@scarlett.klaus: how to give loose waves the boost and hold to form curls'
 date: "2020-12-31"
-author: '@scarlett.klaus'
-linkURL: "https://www.instagram.com/scarlett.klaus/"
+author: '@nicemarcela'
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@scarlett.klaus'
+instaURL: "https://www.instagram.com/scarlett.klaus/"
 image: "../../images/scarlett.png"
 type: 'Hair Type: 2C/3A'
-color: "background-color: ffffff"
 
 product1: 
     title: 'Cleansing: As I Am Naturally Coconut Co-wash'

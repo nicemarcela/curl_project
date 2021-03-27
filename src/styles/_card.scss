@@ -77,8 +77,8 @@ $green: #f5ceff;
 		font-size: 1rem;
 	}
 	.mailinput {
-		top: 120px !important;
-		left: 38px !important;
+		top: 164px !important;
+		left: 82px !important;
 		font-size: 11px!important;
 	}
 	.mailform {
@@ -86,10 +86,13 @@ $green: #f5ceff;
 	}
 
 	.mailbtn {
-		top: 144px !important;
-		left: 82px !important;
+		top: 198px !important;
+		left: 127px !important;
 		font-size: 10px!important;
 		line-height: normal!important;
+	}
+	.site-footer {
+		display: none;
 	}
 }
 
@@ -145,7 +148,21 @@ $green: #f5ceff;
 	background: $black;
 }
 
+.form-subtitle {
+    display: flex;
+    font-family: 'BioRhyme', serif;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: start;
+}
 
+.form-title {
+	display: flex;
+    margin-top: 25px;
+    font-family: 'BioRhyme', serif;
+	text-align: center;
+
+}
 
 .dragbar-right {
 	right: 0;
@@ -296,6 +313,10 @@ ul.post-tags {
 	top: 283px;
     left: 317px;
     position: absolute;
+}
+
+form input[type="email"] {
+    text-transform: lowercase;
 }
 
 .item {

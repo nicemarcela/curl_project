@@ -11,7 +11,7 @@ const IndexPage = () => {
   let numberOfPages
   return (
   <Layout pageTitle="What the Curl">
-    <SEO title="Home" />
+    <SEO title="Home" keywords={[`curly hair`, `healthy curls`, `curls`]}/>
     <StaticQuery 
     query={IndexQuery} 
     render={data => {
@@ -26,13 +26,14 @@ const IndexPage = () => {
             key={node.id}
             title={node.frontmatter.title}
             author={node.frontmatter.author}
+            instagrammer={node.frontmatter.instagrammer}
             slug={node.fields.slug}
             date={node.frontmatter.date}
             body={node.excerpt}
             fluid={node.frontmatter.image.childImageSharp.fluid}
             linkURL={node.frontmatter.linkURL}
+            instaURL={node.frontmatter.instaURL}
             type={node.frontmatter.type}
-            color= {node.frontmatter.color}
             />
             
           ))}
@@ -60,9 +61,9 @@ query {
         id
         frontmatter {
           linkURL
+          instaURL
           title
           type
-          color
           date(formatString:"MMM Do YYYY")
           product1 {
             title
@@ -98,6 +99,7 @@ query {
             }
             
           }
+          instagrammer
           author
           image {
             childImageSharp {

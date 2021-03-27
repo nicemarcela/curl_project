@@ -2,11 +2,12 @@
 
 title: 'Naturalista hair care: better understanding curls needs, and how to keep them happy with @cherieglover.'
 date: "2021-01-09"
-author: '@cherieglover'
-linkURL: "https://www.instagram.com/cherieglover/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@cherieglover'
+instaURL: "https://www.instagram.com/cherieglover/"
 image: "../../images/cherieglover.png"
 type: 'Hair Type: 3A/3B/3C'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

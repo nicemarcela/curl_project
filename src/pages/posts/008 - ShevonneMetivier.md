@@ -2,11 +2,12 @@
 
 title: 'Shevonne Metivier shares drugstore hero products for healthy curly hair.'
 date: "2021-02-06"
-author: '@shevmetivier' 
-linkURL: "https://www.instagram.com/shevmetivier/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@shevmetivier'
+instaURL: "https://www.instagram.com/shevmetivier/"
 image: "../../images/shevonne.png"
 type: 'Hair Type: 3A/3B/3C'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

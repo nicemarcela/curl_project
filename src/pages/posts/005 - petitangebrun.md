@@ -2,11 +2,12 @@
 
 title: 'Masc-meets-femme: Caroline Colvin — How short curls honor the expansiveness of their gender identity.'
 date: "2021-01-16"
-author: '@petitangebrun'
-linkURL: "https://www.instagram.com/petitangebrun/"
+author: '@nicemarcela' 
+linkURL: "https://www.instagram.com/nicemarcela/"
+instagrammer: '@petitangebrun'
+instaURL: "https://www.instagram.com/petitangebrun/"
 image: "../../images/carolcolvin1.png"
 type: 'Hair Type: 4A/4B/4C'
-color: "background-color: #ffffff"
 
 product1: 
     title: 'Cleansing'

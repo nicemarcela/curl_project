@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { CardText, CardSubtitle, CardTitle } from 'reactstrap'
+import { CardText, CardSubtitle, CardTitle, CardDeck } from 'reactstrap'
 import Img from 'gatsby-image'
+// import Layout from "../components/layout"
 
 const Post = 
  ({ title, 
@@ -14,11 +15,13 @@ const Post =
     product2, 
     product3, 
     linkURL,
+    instaURL,
+    instagrammer,
     type,
-    color
  }) => {
     return (
-    <div>
+    <layout>
+        <CardDeck>
         <div className="card-body px-0">
             <div className="window window-2">     
                 <header className="window-header">
@@ -32,7 +35,7 @@ const Post =
             <div className='dragbar-left' id="resize-left"></div>
             <div className='dragbar-bottom' id="resize-bottom"></div>
             <div  className="window-content p-4">
-            <span style={{color}}>
+            
             <CardTitle>
                 <Link to={`/${slug}/`}>
                 <h2>{title}</h2>
@@ -57,12 +60,13 @@ const Post =
             More
             </button>
             </Link>
-            </span>
+        
 
             </div>
             </div>
         </div>
-    </div>
+        </CardDeck>
+    </layout>
     )
 }
 
