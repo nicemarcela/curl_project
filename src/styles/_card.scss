@@ -88,11 +88,8 @@ $green: #f5ceff;
 	.mailbtn {
 		top: 198px !important;
 		left: 127px !important;
-		font-size: 10px!important;
+		font-size: 20px!important;
 		line-height: normal!important;
-	}
-	.site-footer {
-		display: none;
 	}
 }
 
@@ -312,7 +309,8 @@ ul.post-tags {
 .mailbtn {
 	top: 283px;
     left: 317px;
-    position: absolute;
+	display: block;
+	margin: 0 auto;
 }
 
 form input[type="email"] {

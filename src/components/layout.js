@@ -43,6 +43,7 @@ const Layout = ({ children, pageTitle }) => (
         <div className="container" id="content">
         <img className="icon" src={Icon} alt="" />
         <h1 className="title">{pageTitle}</h1>
+        <h3 className="brand-description">Community-based stories to inspire your natural hair journey.</h3>
           <div className="row justify-content-center">
             <div>{children}</div>
           </div>

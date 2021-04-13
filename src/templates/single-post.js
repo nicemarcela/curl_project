@@ -36,7 +36,7 @@ const SinglePost = ({ data, pageContext, node}) => {
     return (
       <div>
       <Header />
-       <div className="container" id="content">
+       <div className="container px-0" id="content">
          
          <SEO
             author={post.author}

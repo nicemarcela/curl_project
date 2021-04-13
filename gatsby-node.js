@@ -19,6 +19,7 @@ exports.createPages = async ({ actions, graphql }) => {
 // Page templates
 const templates = {
   post: path.resolve('src/templates/single-post.js'),
+  ratings: path.resolve('src/templates/single-rating.js'),
   postList: path.resolve('src/templates/post-list.js'),
 }
 
@@ -29,6 +30,7 @@ const res = await graphql(`
     edges {
       node {
         frontmatter {
+          posttype
           author
         }
         fields {
@@ -47,15 +49,26 @@ const res = await graphql(`
 
   // Create single post pages
   posts.forEach(({ node }) => {
+    if (node.frontmatter.posttype === 'rating') {
     createPage({
       path: node.fields.slug,
-      component: templates.post,
+      component: templates.ratings,
       context: {
         // Passing slug for template to use to fetch the post
         slug: node.fields.slug,
       },
-    })
+    });
+  } else {
+    createPage({
+      path: node.fields.slug,
+      component: templates.post,
+      context: {
+        slug: node.fields.slug, 
+      }
+    });
+  }
   })
+
 
   // Create posts pagination pages
   const postsPerPage = 5

@@ -13,11 +13,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 
-.container#content {
-  display: inherit;
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
 body {
   background-color: $light-gray;
   font-family: $site-font;
@@ -70,6 +65,13 @@ h1 {
   position: fixed;
 }
 
+.brand-description {
+  font-family: "Fredoka One",cursive;
+  font-size: 21px;
+  color: #66d9ec;
+  -webkit-text-stroke: 0.5px #020102;
+  text-align: center;
+}
 .pagination{
   margin: 0 auto;
   display: flex;
@@ -153,16 +155,6 @@ ul {
     align-items: center;
     position: relative;
 }
-.container#content {
-    width: 100vw;
-    height: calc(100vh - 90px)!important;
-}
-
-.container {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
 .window-2 {
   width: auto;
   left: auto;
@@ -179,5 +171,6 @@ ul {
 .gatsby-resp-image-image{
   width: 100%!important;
 }
+
 
 }

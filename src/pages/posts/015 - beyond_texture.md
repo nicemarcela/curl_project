@@ -57,7 +57,7 @@ She is the mind behind [Beyond Texture](https://www.beyondtexture.net/), a commu
 
 What is it to embrace your texture for you?  
 
-For me it is loving my hair in these days which it is all matted (like today). I put it in a bun and try my best to ignore it, won't look at the mirror for too long because I will be reminded of the work I will have when detangling it on next washday. Even in these days, I still take the time to spray some water, give it some moisture, and to look at it with care and love.
+For me, it is loving my hair in these days which it is all matted (like today). I put it in a bun and try my best to ignore it, won't look at the mirror for too long because I will be reminded of the work I will have when detangling it on next washday. Even these days, I still take the time to spray some water, give it some moisture, and look at it with care and love.
 
 I think embracing your texture, as Jessica says, goes beyond. It goes beyond posting on Instagram your good hair days! It's mostly about all the love, attention, and patience you put on taking care of your hair. It is about going against all those people who said you'd look better with blow-fried hair. It's about your journey of acceptance, it's self-love.  
 
