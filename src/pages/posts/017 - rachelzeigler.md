@@ -40,7 +40,7 @@ Rachel Zeigler is a Licensed Cosmetologist based in the Bay Area. She is passion
 
 Rachel is the founder of Naked Chemistry, a skincare brand that creates effective, vegan, and sustainable products that help to alleviate, prevent and heal ingrown hairs for all.
 
-*Keep reading our talk* other than haircare we also discussed inclusivity, and the non-beauty part of the beauty industry.  
+*Keep reading our talk*, other than haircare we also discussed inclusivity, and the non-beauty part of the beauty industry.⬇️    
 
 ***In a few words, how do you define yourself?***  
 
