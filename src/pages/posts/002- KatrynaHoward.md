@@ -9,6 +9,8 @@ instagrammer: '@katt_daddy'
 instaURL: "https://www.instagram.com/katt_daddy/"
 image: "../../images/kattdaddy.png"
 type: 'Hair Type: 4A'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing '
@@ -32,10 +34,6 @@ product2:
       productURL: "https://www.ulta.com/honey-miracle-hair-mask-deep-conditioner?productId=pimprod2005394"
     - image: "../../images/innersensedc.jpg"
       productURL: "https://innersensebeauty.com/product/pure-inspiration/"
-    - image: "../../images/rizoscurlsdc.jpg"
-      productURL: "https://rizoscurls.com/products/deep-conditioner"
-    - image: "../../images/rizoscurlsdc.jpg"
-      productURL: "https://rizoscurls.com/products/deep-conditioner"
 
 product3: 
     title: 'Styling'
@@ -54,7 +52,7 @@ product3:
       productURL: "https://rizoscurls.com/products/new-refresh-detangle-spray"
     - image: "../../images/olaplex7.jpg"
       productURL: "https://www.olaplex.com/products/no-7-bonding-oil"
-    - image: "../../images/rizoscurlsdc.jpg"
+    - image: "../../images/rizoscurlsdefiningcream.png"
       productURL: "https://rizoscurls.com/products/curl-defining-cream"
     - image: "../../images/patternleavein.jpg"
       productURL: "https://www.patternbeauty.com/products/leave-in"

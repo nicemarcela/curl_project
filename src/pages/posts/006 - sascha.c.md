@@ -8,6 +8,8 @@ instagrammer: '@sascha.c'
 instaURL: "https://www.instagram.com/sascha.c/"
 image: "../../images/sascha.png"
 type: 'Hair Type: 3C/4A'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

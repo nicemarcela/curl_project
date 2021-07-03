@@ -8,6 +8,8 @@ instagrammer: '@ariellaflowers'
 instaURL: "https://www.instagram.com/ariellaflowers/"
 image: "../../images/ariellaflowers.png"
 type: 'Hair Type: 4a/4b/4c'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing: Aloe Vera + Olaplex no.4'

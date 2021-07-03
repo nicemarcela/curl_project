@@ -8,6 +8,8 @@ instagrammer: '@verooobonilla'
 instaURL: "https://www.instagram.com/verooobonilla/"
 image: "../../images/verobonilla.png"
 type: 'Hair Type: 3A/3B/3C'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

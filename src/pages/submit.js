@@ -18,7 +18,7 @@ const SubmitPage = () => (
             <h4 className="form-title"> We're eager to share as many inspiring stories as possible! </h4> <br/>
               <p className="form-subtitle">Got an interesting story about your acceptance journey? <br/>
         Want to share what you've been learning about transitioning to natural hair?<br/>
-        Has some precious tips to share with the community? <br/>
+        Has some precious tips to share with the community? <br/><br/>
         We're all ears, drop your words of wisdom bellow 👇🏽<br/>
               </p>
         <div className='dragbar-right' id="resize-right"></div>

@@ -8,6 +8,8 @@ instagrammer: '@wowiwrite'
 instaURL: "https://www.instagram.com/wowiwrite/"
 image: "../../images/ayanna.png"
 type: 'Hair Type: 4A/4B/4C'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

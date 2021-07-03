@@ -8,6 +8,8 @@ instagrammer: '@shevmetivier'
 instaURL: "https://www.instagram.com/shevmetivier/"
 image: "../../images/shevonne.png"
 type: 'Hair Type: 3A/3B/3C'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

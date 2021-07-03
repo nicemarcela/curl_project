@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { CardText, CardSubtitle, CardTitle, CardDeck } from 'reactstrap'
+import { CardText, CardSubtitle, CardTitle, CardDeck, Badge } from 'reactstrap'
 import Img from 'gatsby-image'
+import { slugify } from '../util/utilityFunctions'
 // import Layout from "../components/layout"
 
 const Post = 
@@ -18,6 +19,7 @@ const Post =
     instaURL,
     instagrammer,
     type,
+    tags,
  }) => {
     return (
     <layout>
@@ -25,9 +27,20 @@ const Post =
         <div className="card-body px-0">
             <div className="window window-2">     
                 <header className="window-header">
+                    <ul>{tags.map(tag => (
+                        <li key={tag}>
+                            <Link to={`/tag/${slugify(tag)}`}>
+                            <Badge color="badge badge-light mb-1 text-center" pill>
+                                {tag}
+                            </Badge>
+                            </Link>
+                        </li>
+                        ))}
+                    </ul>
                     <CardSubtitle>
                         <span className="card-subtitle">{date}</span> by {' '}
-                        <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author}</a>
+                        <a href={linkURL} target="_blank" rel="noopener noreferrer" className="text-info">{author} 
+                        </a>
                     </CardSubtitle>
                     <nav className="window-controls"></nav>
                 </header>
@@ -41,6 +54,7 @@ const Post =
                 <h2>{title}</h2>
                 </Link>
             </CardTitle>
+            
             
             <Link to={`/${slug}/`}>
                 <Img className="card-image my-4 w-100" fluid={fluid} />

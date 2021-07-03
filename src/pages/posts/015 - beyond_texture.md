@@ -1,6 +1,6 @@
 ---
 
-title: 'Talking Beyond Texture with curl specialist, Jessica Knight.'
+title: 'Talking Beyond Texture with curl specialist Jessica Knight.'
 date: "2021-03-27"
 author: '@nicemarcela' 
 linkURL: "https://www.instagram.com/nicemarcela/"
@@ -8,6 +8,8 @@ instagrammer: '@beyond_texture'
 instaURL: "https://www.instagram.com/beyond_texture/"
 image: "../../images/jessicaknight.png"
 type: 'Hair Type: 3A/3B'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

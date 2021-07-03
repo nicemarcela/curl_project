@@ -8,6 +8,8 @@ instagrammer: '@scarlett.klaus'
 instaURL: "https://www.instagram.com/scarlett.klaus/"
 image: "../../images/scarlett.png"
 type: 'Hair Type: 2C/3A'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing: As I Am Naturally Coconut Co-wash'

@@ -34,6 +34,7 @@ const IndexPage = () => {
             linkURL={node.frontmatter.linkURL}
             instaURL={node.frontmatter.instaURL}
             type={node.frontmatter.type}
+            tags={node.frontmatter.tags}
             />
             
           ))}
@@ -64,6 +65,7 @@ query {
           instaURL
           title
           type
+          tags
           date(formatString:"MMM Do YYYY")
           product1 {
             title

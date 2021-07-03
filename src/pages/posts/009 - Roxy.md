@@ -8,6 +8,8 @@ instagrammer: '@coastal.curl'
 instaURL: "https://www.instagram.com/coastal.curl/"
 image: "../../images/roxy.png"
 type: 'Hair Type: 3C/4A'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

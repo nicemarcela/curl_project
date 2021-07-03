@@ -1,5 +1,6 @@
 const { slugify } = require ('./src/util/utilityFunctions')
 const path = require('path')
+const _ = require('lodash')
 
 exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions;
@@ -21,6 +22,8 @@ const templates = {
   post: path.resolve('src/templates/single-post.js'),
   ratings: path.resolve('src/templates/single-rating.js'),
   postList: path.resolve('src/templates/post-list.js'),
+  tag: path.resolve('src/templates/tag-posts.js'),
+  tagsPage: path.resolve('src/templates/tags-page.js'),
 }
 
 
@@ -32,6 +35,7 @@ const res = await graphql(`
         frontmatter {
           posttype
           author
+          tags
         }
         fields {
           slug
@@ -92,5 +96,42 @@ const res = await graphql(`
       },
     })
   })
+   // Get all tags
+   let tags = []
+   _.each(posts, edge => {
+     if (_.get(edge, 'node.frontmatter.tags')) {
+       tags = tags.concat(edge.node.frontmatter.tags)
+     }
+   })
+ 
+   let tagPostCounts = {} // { tutorial: 2, design: 1}
+   tags.forEach(tag => {
+     // Or 0 cause it might not exist yet
+     tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
+   })
+ 
+   // Remove duplicates
+   tags = _.uniq(tags)
+ 
+   // Tags page (all tags)
+   createPage({
+     path: '/tags',
+     component: templates.tagsPage,
+     context: {
+       tags,
+       tagPostCounts,
+     },
+   })
+ 
+   // Tag posts pages
+   tags.forEach(tag => {
+     createPage({
+       path: `/tag/${_.kebabCase(tag)}`,
+       component: templates.tag,
+       context: {
+         tag,
+       },
+     })
+   })
 }
 

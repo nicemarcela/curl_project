@@ -8,6 +8,8 @@ instagrammer: '@petitangebrun'
 instaURL: "https://www.instagram.com/petitangebrun/"
 image: "../../images/carolcolvin1.png"
 type: 'Hair Type: 4A/4B/4C'
+tags:
+  - Interview
 
 product1: 
     title: 'Cleansing'

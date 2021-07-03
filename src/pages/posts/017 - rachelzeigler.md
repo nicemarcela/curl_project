@@ -8,6 +8,8 @@ instagrammer: '@RachelZeigler_'
 instaURL: "https://www.instagram.com/RachelZeigler_/"
 image: "../../images/rachelzeigler.png"
 type: 'Hair Type: 4A/4B/4C'
+tags:
+  - Interview
  
 product1: 
     title: 'Cleansing'

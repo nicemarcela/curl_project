@@ -47,6 +47,7 @@ export const postListQuery = graphql`
             title
             date(formatString: "MMMM Do YYYY")
             author
+            tags
             image {
               childImageSharp {
                 fluid {
