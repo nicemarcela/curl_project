@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-instagram`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {

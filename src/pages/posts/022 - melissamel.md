@@ -1,6 +1,6 @@
 ---
 
-title: 'How Melissa Mel is creating space for small businesses and intentional shopping with the WoMi™️ App.'
+title: 'How Melissa Mel is creating space for small businesses with the WoMi™️ App.'
 date: "2021-07-03"
 author: '@nicemarcela' 
 linkURL: "https://www.instagram.com/nicemarcela/"
